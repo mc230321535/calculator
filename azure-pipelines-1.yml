@@ -4,10 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- none
+- master
 
 pool:
   name: local
+  demands:
+   - agent.name -equals DESKTOP-O2I6EI1
 
 steps:
 - task: NodeTool@0
