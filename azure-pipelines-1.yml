@@ -7,6 +7,7 @@ trigger:
 - master
 
 pool:
+  vmImage: 'Ubuntu 16.04'
   name: local
   demands:
    - agent.name -equals DESKTOP-O2I6EI1
